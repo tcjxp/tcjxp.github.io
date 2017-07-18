@@ -14,6 +14,19 @@ var ML_vars = { cid:2354 };
 <script>
     jxpinitialize();
     jxpsubmitter("subdomain", "formtosubmit", cid, did, false);
+
+    function createCookie(name,value,days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days*24*60*60*1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+    document.cookie = name + "=" + value + expires + "; path=/";
+	    
+    createCookie("jxp_cookie", sharejxpcookie(), 10);
+}	
+	
 </script>
 
   <meta charset="utf-8">
