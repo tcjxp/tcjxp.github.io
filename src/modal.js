@@ -185,4 +185,5 @@ class RModal {
 RModal.prototype.version = '@@VERSION@@';
 RModal.version = '@@VERSION@@';
 
-export default RModal;
+// export default RModal;
+window.test = RModal;
